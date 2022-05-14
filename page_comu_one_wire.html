@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- 這是註解 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      One-Wire Protocol
+    </title>
+  </head>
+
+  <body>
+    <p>What is it : <br>
+        協議 : 使用雙絞線電纜通過 1-Wire 網絡與 1-Wire 組件進行數位通訊<br>
+        網絡 : 漏極開路（線與）主/從多點架構定義，電阻上拉至主端的標稱5V電源<br>
+        組件 : 總線主控器、接線及相關連接器、1-Wire裝置<br>
+    </p>
+
+    <p>Features : <br>
+        每個 1-Wire 從機都在 ROM 中存儲了一個唯一的 64 位序列號，作為其節點地址設備，可以從許多可以連接到同一總線的設備中單獨選擇<br>
+
+•	each 1-Wire slave has stored in ROM a unique 64-bit serial number that acts as its node address  device to be individually selected from among many that can be connected to the same bus wire
+o	This globally unique address is composed of eight bytes divided into three main sections. Starting with the LSB, the first byte stores the 8-bit family codes that identify the device type. The next six bytes store a customizable 48-bit individual address. The last byte, the most significant byte (MSB), contains a cyclic redundancy check (CRC) with a value based on the data contained in the first seven bytes. This allows the master to determine if an address was read without error. With a 248 serial number pool, conflicting or duplicate node addresses on the net are never a problem.
+•	1-Wire devices can be formatted with a file directory like a floppy disk  files can be randomly accessed and changed without disturbing other records
+•	Maximum data security can be provided by 1-Wire chip implementation of the US government-certified Secure Hash Algorithm (SHA-1)
+•	uses a single wire (plus ground) to accomplish both communication and power transmission. 
+•	A single bus master can feed multiple slaves over a single twisted-pair cable
+•	simplify design with an interface protocol that supplies control, signaling, and power over a single-wire connection.
+
+    </p>
+
+    <p>Basic Protocol Operations</p>
+
+
+  </body>
+</html>
+
