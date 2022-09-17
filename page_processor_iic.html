@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- 這是註解 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>I²C/SMBUS (積體匯流排電路)</title>
+  </head>
+
+  <body>
+    <h1><strong><i>???</i></strong></h1>
+    
+    <hr>
+    <p>
+        <h2>STM32G474RE REG.</h2>  
+    </p>
+
+
+    <hr>
+    <p>
+      <h2>STM32 HAL USED</h2>
+      <ol>
+        <li><i>MX_I2Cx_Init</i></li>
+        <p>
+
+        </p>
+        <li><i>HAL_I2C_Mem_Write</i></li>
+        <p>
+            簡述    : 以阻塞模式將一定量的數據寫入特定的內存地址<br>
+            參數*hi2c       : 指向 I2C_HandleTypeDef 結構的指針<br>
+            參數DevAddress  : 目標設備地址,調用前須將數據的設備7位地址值左移<br>
+            參數MemAddress  : 內存地址<br>
+            參數MemAddSize  : 內存地址大小<br>
+            參數pData       : 指向數據緩衝區的指針<br>
+            參數Size        : 要發送的數據量<br>
+            參數Timeout     : 超時時間<br>
+            回傳    : HAL status<br>
+        </p>
+        <li><i>HAL_I2C_Mem_Read</i></li>
+        <p>
+            簡述    : 從特定內存地址以阻塞模式讀取一定量的數據<br>
+            參數*hi2c       : 指向 I2C_HandleTypeDef 結構的指針<br>
+            參數DevAddress  : 目標設備地址,調用前須將數據的設備7位地址值左移<br>
+            參數MemAddress  : 內存地址<br>
+            參數MemAddSize  : 內存地址大小<br>
+            參數pData       : 指向數據緩衝區的指針<br>
+            參數Size        : 要發送的數據量<br>
+            參數Timeout     : 超時時間<br>
+            回傳    : HAL status<br>
+        </p>
+        <li><i>HAL_I2C_Mem_Write_IT</i></li>
+        <p>
+            簡述    : 使用中斷的非阻塞模式將一定量的數據寫入特定的內存地址<br>
+            參數*hi2c       : 指向 I2C_HandleTypeDef 結構的指針<br>
+            參數DevAddress  : 目標設備地址,調用前須將數據的設備7位地址值左移<br>
+            參數MemAddress  : 內存地址<br>
+            參數MemAddSize  : 內存地址大小<br>
+            參數pData       : 指向數據緩衝區的指針<br>
+            參數Size        : 要發送的數據量<br>
+            參數Timeout     : 超時時間<br>
+            回傳    : HAL status<br>
+        </p>
+      </ol>
+    </p>
+    <hr>
+
+  </body>
+</html>
+
