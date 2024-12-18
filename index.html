@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title> 亞瑟的筆記本 </title>
+  <link rel="stylesheet" href="html_style.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
         <tr>
           <td> ??? </td>
           <td> ??? </td>
-          <td> <img src="./docs/assets/isa_layers.jpg" style="width: 100%;"> </td>
+          <td> </td>
         </tr>
         <tr>
           <td> ??? </td>
@@ -38,28 +39,232 @@
   <hr style="border-color:lightblue; border-width:10px; display: block;"><!----(H1)分段格線---->
 
   <section>
-    <summary> </summary>
-    <table border="1" cellpadding="1" cellspacing="1" style="width: 95%">
-      <thead>
-        <tr>
-          <th style="width: 200px;"> Name </th>
-          <th> Description </th>
-          <th style="width: 30%;"> Figure </th>
-        </tr>
-      </thead>
-      <tobdy>
-        <tr>
-          <td> ??? </td>
-          <td> ??? </td>
-          <td> ??? </td>
-        </tr>
-        <tr>
-          <td> ??? </td>
-          <td> ??? </td>
-          <td> ??? </td>
-        </tr>
-      </tobdy>
-    </table>
+    <details open>
+      <summary> STMG474 / PMSM / BLDC </summary>
+      <table border="1" cellpadding="1" cellspacing="1" style="width: 95%">
+        <thead>
+          <tr>
+            <th style="width: 200px;"> SIP </th>
+            <th> Item-1 </th>
+            <th> Item-2 </th>
+            <th style="width: 10%;"> Figure </th>
+          </tr>
+        </thead>
+        <tobdy>
+          <tr>
+            <td colspan="4"> <img src="./docs/assets/20241218 (1).jpg" style="width: 100%;"> </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> IC Name </td>
+            <td align="center"> STM32G474 </td>
+            <td align="center"> BLDC/PMSM </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Mask ROM </td>
+            <td> &cross; </td>
+            <td> &cross;</td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Flash ROM </td>
+            <td> 512KB </td>
+            <td> Above 64KB </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Program RAM </td>
+            <td> &cross; </td>
+            <td> &cross; </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> SRAM </td>
+            <td> 128KB </td>
+            <td> 32KB </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> OTP </td>
+            <td> 1KB </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Other </td>
+            <td> Backup SRAM 4KB </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> SYS Clock </td>
+            <td> 170 MHz /213 DMIPS </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> LIRC </td>
+            <td> 32 kHz (±5%) </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> HIRC </td>
+            <td> 16 MHz (±1%) </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Crystal </td>
+            <td> 4 to 48 MHz; 32.768 kHz crystal for RTC </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> VDD </td>
+            <td> 1.71 V - 3.6 V </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> VDDIO </td>
+            <td> 1.71 V - 3.6 V </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> DVDD </td>
+            <td> &cross; </td>
+            <td> &cross; </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> VDDIO_USB </td>
+            <td> 3.0 V -3.6 V </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Power Mode </td>
+            <td> Low-power modes: sleep, stop, standby, shutdown; Ultra-low leakage VBAT mode for RTC </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> DMA </td>
+            <td> 1 * 16 Channels </td>
+            <td> DMA (UART &hArr; RAM) , DMA (ADC &hArr; RAM) </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> GPIO </td>
+            <td> 107 Pins </td>
+            <td> TBD </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Timer </td>
+            <td> ... </td>
+            <td> ... </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> RTC </td>
+            <td> Real-Time Clock with calendar, alarm, and periodic wake-up </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> UART </td>
+            <td> 5(USART/UARTs) </td>
+            <td> 2 </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> SPI </td>
+            <td> 4, (2 support I2S audio interface) </td>
+            <td> 1 </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> I2C </td>
+            <td> 4 x I2C (Fast mode plus, SMBus/PMBus support) </td>
+            <td> 1 </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> MIPI </td>
+            <td> &cross; </td>
+            <td> &cross; </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> USB </td>
+            <td> 1 x USB 2.0 full-speed interface (with LPM, BCD) </td>
+            <td> &cross; </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Others </td>
+            <td> LPUART/FDCAN/IRTIM/SAI/UCPD </td>
+            <td> &cross; </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Encryption </td>
+            <td> TRNG, CRC, PCROP </td>
+            <td> &cross; </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Accelerator </td>
+            <td> CORDIC, FMAC </td>
+            <td> CORDIC (Option), FMAC (Option, priority low)</td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> DC/DC </td>
+            <td> &cross; </td>
+            <td> &cross; </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> ADC </td>
+            <td> 5 Sets ADCs, 12-bit ADC (built-in calibration), 4Msps @ 12bits Mode, Resolution:16-bit( with hardware
+              oversampling), 0~3.6V input range </td>
+            <td> ADC( x 1), 1MSPS @ 12bits Mode (2 MSPS better) </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Amplifier </td>
+            <td> x6 Rail-to-rail input/output, BW(13MHz) </td>
+            <td> x2 Rail to Rail </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> DAC </td>
+            <td> 12-bit DAC channels (7 channel), 8-bit / 12-bit output mode, 3 x buffered external channels, 1 MSPS; 4
+              x unbuffered internal channels, 15 MSPS</td>
+            <td> x2 8-bit DAC channels(*1); 12-bit CH*1 (Option, Monitor Used, 1MSPS) </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Comparator </td>
+            <td> Rail-to-Rail x7, programmable reference voltage (internal or external), hysteresis, External I/O, DAC
+              output channels, Internal reference voltage or submultiple (1/4, 1/2, 3/4)</td>
+            <td> Rail-to-Rail x5, VREF: External I/O, DAC Output, Internal VREF or submultiple (1/4, 1/2, 3/4) </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> VREF </td>
+            <td> For ADC/ DACs/CMP/ PGA, External VREF+ pin.(2.048V, 2.5V, 2.9V) </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> VREFINT (Bandgap) </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> VTS (Temp Senser) </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> LVD </td>
+            <td> BOR 1.7V-2.0V, LVD: 2.0-2.9 8檔 </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Temper Detect (pin) </td>
+            <td> 3 Temper pins with detection logic </td>
+            <td> Same as Left </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> System Hold </td>
+            <td> &cross; </td>
+            <td> &cross; </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Package </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td style="background-color: gray;"> Operating Temp. </td>
+            <td> -40 ~ 130 &deg; </td>
+            <td> -40 ~ 125 &deg; </td>
+          </tr>
+        </tobdy>
+      </table>
+    </details>
   </section>
 </body>
 

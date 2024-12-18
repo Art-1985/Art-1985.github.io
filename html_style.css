@@ -1,0 +1,344 @@
+    * {
+        margin: auto;
+        padding: auto;
+        background-color: rgb(250, 235, 215);
+    }
+
+    h1 {
+        font-size: 24px;
+        color: Red;
+        font-family: verdana;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: lightskyblue;
+        font-family: verdana;
+    }
+
+    h3 {
+        font-size: 12px;
+        color: Black;
+        font-family: verdana;
+    }
+
+    h4 {
+        font-size: small;
+        color: gray;
+        font-family: verdana;
+        font-style: italic;
+    }
+
+    p {
+        color: black;
+        font-family: Arial;
+    }
+
+    hr {
+        display: block;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+
+        border-style: inset;
+        border-width: 1px;
+    }
+
+
+    th {
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-family: Arial;
+    }
+
+    td {
+        color: black;
+        font-family: Arial;
+    }
+
+    details {
+        max-width: auto;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: auto;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+
+    details[open]>summary {
+        color: lightcoral;
+    }
+
+    details>summary {
+        padding: 4px;
+        width: 360px;
+        color: black;
+        background-color: lightgray;
+        border: none;
+        box-shadow: 3px 3px 1px #bbbbbb;
+        /* h-shadow, v-shadow, blur, spread, color, inset */
+        cursor: pointer;
+    }
+
+    a:link {
+        /*設定還沒瀏覽過的連結樣式*/
+        text-decoration: none;
+        color: blue;
+    }
+
+    a:visited {
+        /*設定還瀏覽過的連結樣式*/
+        text-decoration: none;
+        color: purple;
+    }
+
+    a:hover {
+        /*設定滑鼠移到連結上的樣式*/
+        text-decoration: none;
+        border-bottom: 1px solid red;
+    }
+
+    a:active {
+        /*設定正在被點選的連結樣式*/
+        text-decoration: none;
+    }
+
+    .clears {
+        clear: both;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        overflow: hidden;
+    }
+
+    body {
+        margin: 0 auto;
+    }
+
+    code {
+        text-decoration: none;
+    }
+
+    .total {
+        width: auto;
+        height: auto;
+        /*
+        width: 1920px;
+        height: 825px;
+        background-color: darkgrey;
+        */
+        padding-top: 20px;
+    }
+
+    .all {
+        width: auto;
+        height: auto;
+        background-color: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .header {
+        height: auto;
+        width: auto;
+        background-color: auto;
+        color: black;
+        margin: 20px auto 30px;
+        text-align: center;
+        line-height: 36px;
+        font-size: 30px;
+        cursor: pointer;
+        /*
+        animation: banner_big 1s infinite alternate;
+        animation: Ani 0.4s 0.2s both;
+        */
+    }
+
+    @keyframes banner_big {
+        0% {
+            opacity: 0;
+            transform: scale(1, 1);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1.5, 1.5);
+        }
+    }
+
+    @keyframes Ani {
+        0% {
+            opacity: 0;
+            transform: scale(0.3, 0.3) rotateZ(-205deg);
+        }
+
+        80% {
+            opacity: 1;
+            transform: scale(1.2, 1.2) rotateZ(0deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1, 1) rotateZ(0);
+        }
+    }
+
+    .nav {
+        height: auto;
+        width: auto;
+        background-color: darkgray;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 30px;
+    }
+
+    .menue {
+        width: auto;
+        height: auto;
+        display: inline-block;
+    }
+
+    /*
+    .menue,
+    ul {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .menue,
+    ul>li {
+        display: inline-block;
+        height: auto;
+        width: auto;
+        text-align: center;
+        font-size: 18px;
+        background-color: dimgrey;
+    }
+*/
+
+
+    .message {
+        font-size: 24px;
+        text-align: center;
+        background-color: deepskyblue;
+        margin-bottom: 15px;
+    }
+
+    p.date {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 15px;
+        background-color: lightcoral;
+    }
+
+    .m1 {
+        float: left;
+    }
+
+    .m2 {
+        float: left;
+        position: relative;
+    }
+
+    .m3 {
+        float: left;
+        position: relative;
+    }
+
+    .m1,
+    .m2,
+    .m3 {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 18px;
+        background-color: goldenrod;
+        text-align: left;
+    }
+
+
+    .caffe {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 120px;
+        border-radius: 90px;
+    }
+
+    .word {
+        font-size: 25px;
+        margin-left: 145px;
+        margin-top: 15px;
+
+    }
+
+    .word a:link {
+        color: gold;
+        font-weight: bolder;
+        background-color: lightgoldenrodyellow;
+    }
+
+    .word a:hover {
+        color: red;
+    }
+
+    .aside {
+        height: auto;
+        /* width: 300px; */
+        width: 20%;
+        background-color: gray;
+        float: right;
+
+    }
+
+    .main {
+        height: auto;
+        width: 80%;
+        font-size: auto;
+        /*
+        width: 700px;
+        background-color: lightcoral;
+        position: relative;
+        */
+        line-height: 35px;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .main p a:link {
+        color: blue;
+        size: 14px;
+    }
+
+    .main p a:hover {
+        color: red;
+        size: 14px;
+    }
+
+    .footer {
+        height: 80px;
+        width: 100px;
+        background-color: gray;
+        /* darkcyan */
+        font-size: 18px;
+        margin-top: auto;
+        float: bottom;
+        text-align: center;
+        margin-left: 100px;
+        line-height: 100px;
+    }
+
+    .shadowbox {
+        width: 15em;
+        border: 1px solid #333;
+        box-shadow: 8px 8px 5px #444;
+        padding: 8px 12px;
+        background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    }
