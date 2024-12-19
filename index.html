@@ -28,8 +28,8 @@
               <ul>
                 <li> Current Feedback </li>
                 <p style="color: red;">1. Observer{ PGA*2, ADC_CH*3(2I,1V) }, IVREF*1, CMP*1(OC), DAC*1 <br></p>
-                2. PGA*1, ADC_CH*1, IVREF*1, CMP*1(OC) <br>
-                3. Observer{PGA*3, ADC_CH*6(3I,3V)} , IVREF*1, CMP*1(OC), DAC*1 <br>
+                2. Observer{ PGA*1, ADC_CH*1 }, IVREF*1, CMP*1(OC) <br>
+                3. Observer{ PGA*3, ADC_CH*6(3I,3V) } , IVREF*1, CMP*1(OC), DAC*1 <br>
                 <li> Voltage Feedback </li>
                 <p style="color: red;"> 1. ADC_CH*3(BEMF), CMP*1(OV or UV), IVREF*1 <br></p>
                 <p style="color: red;"> 2. CMP_CH*3(BEMF), CMP*1(OV or UV), IVREF*1, DAC*1 <br> </p>
@@ -70,15 +70,15 @@
         <tobdy>
           <tobdy>
             <tr>
-              <td> ??? </td>
+              <td> SVPWM + <br> SMO + <br> FOC </td>
               <td colspan="2"> <img src="./docs/assets/20241218 (3).jpg" style="width: 100%;"> </td>
             </tr>
             <tr>
-              <td> ??? </td>
+              <td> SVPWM + <br> QEI + <br> FOC </td>
               <td colspan="2"> <img src="./docs/assets/20241218 (4).jpg" style="width: 100%;"> </td>
             </tr>
             <tr>
-              <td> ??? </td>
+              <td> PWM + <br> BEMF </td>
               <td colspan="2"> <img src="./docs/assets/20241218 (5).jpg" style="width: 100%;"> </td>
             </tr>
             <tr>
@@ -257,7 +257,7 @@
             <td style="background-color: gray;"> ADC </td>
             <td> 5 Sets ADCs, 12-bit ADC (built-in calibration), 4Msps @ 12bits Mode, Resolution:16-bit( with hardware
               oversampling), 0~3.6V input range </td>
-            <td> ADC( x 1), 1MSPS @ 12bits Mode (2 MSPS better) </td>
+            <td> ADC( x 1), 1MSPS @ 12bits Mode (2 MSPS better), Channel ( x 8)</td>
           </tr>
           <tr>
             <td style="background-color: gray;"> Amplifier </td>
