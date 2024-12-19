@@ -10,14 +10,59 @@
 <body>
 
   <hr style="border-color:lightblue; border-width:10px; display: block;"><!----(H1)分段格線---->
+  <details open>
+    <summary> Overview </summary>
+    <table border="1" cellpadding="1" cellspacing="1" style="width: 95%">
+      <thead>
+        <tr>
+          <th style="width: 120px;"> Name </th>
+          <th> Description </th>
+          <th style="width: 50%;"> Figure </th>
+        </tr>
+      </thead>
+      <tobdy>
+        <tobdy>
+          <tr>
+            <td> Overview </td>
+            <td>
+              <ul>
+                <li> Current Feedback </li>
+                <p style="color: red;">1. Observer{ PGA*2, ADC_CH*3(2I,1V) }, IVREF*1, CMP*1(OC), DAC*1 <br></p>
+                2. PGA*1, ADC_CH*1, IVREF*1, CMP*1(OC) <br>
+                3. Observer{PGA*3, ADC_CH*6(3I,3V)} , IVREF*1, CMP*1(OC), DAC*1 <br>
+                <li> Voltage Feedback </li>
+                <p style="color: red;"> 1. ADC_CH*3(BEMF), CMP*1(OV or UV), IVREF*1 <br></p>
+                <p style="color: red;"> 2. CMP_CH*3(BEMF), CMP*1(OV or UV), IVREF*1, DAC*1 <br> </p>
+                <li> Position Feedback </li>
+                1. Encoder : Digital IO <br>
+                2. Resolver : ADC_CH*2 <br>
+                <li> Other Feedback </li>
+                <p style="color: red;"> 1. External Temperature : ADC_CH*1 <br> </p>
+                <p style="color: red;"> 2. Internal Temperature : ADC_CH*1 <br> </p>
+                <p style="color: red;"> 3. Speed Command : ADC_CH*1 <br> </p>
+                <li> Debug, Monitor </li>
+                <p style="color: red;"> 1. DAC*1 <br> </p>
+              </ul>
+              <hr>
+              PGA : PGA * 2 <br>
+              ADC : ADC_CH * 6 + RSV * 2<br>
+              CMP : CMP * 5 <br>
+              DAC * 2 <br>
+            </td>
+            <td> <img src="./docs/assets/20241218 (6).jpg" style="width: 100%;"> </td>
+          </tr>
+        </tobdy>
+    </table>
+  </details>
 
+  <hr style="border-color:lightblue; border-width:10px; display: block;"><!----(H1)分段格線---->
   <section>
     <details>
-      <summary> TI InstaSPIN </summary>
+      <summary> TI Solution </summary>
       <table border="1" cellpadding="1" cellspacing="1" style="width: 95%">
         <thead>
           <tr>
-            <th style="width: 200px;"> Name </th>
+            <th style="width: 120px;"> Name </th>
             <th> Description </th>
             <th style="width: 30%;"> Figure </th>
           </tr>
@@ -25,12 +70,20 @@
         <tobdy>
           <tobdy>
             <tr>
-              <td colspan="3"> <img src="./docs/assets/20241218 (2).jpg" style="width: 100%;"> </td>
+              <td> ??? </td>
+              <td colspan="2"> <img src="./docs/assets/20241218 (3).jpg" style="width: 100%;"> </td>
             </tr>
             <tr>
               <td> ??? </td>
+              <td colspan="2"> <img src="./docs/assets/20241218 (4).jpg" style="width: 100%;"> </td>
+            </tr>
+            <tr>
               <td> ??? </td>
-              <td> ??? </td>
+              <td colspan="2"> <img src="./docs/assets/20241218 (5).jpg" style="width: 100%;"> </td>
+            </tr>
+            <tr>
+              <td> TI InstaSPIN </td>
+              <td colspan="2"> <img src="./docs/assets/20241218 (2).jpg" style="width: 100%;"> </td>
             </tr>
           </tobdy>
       </table>
@@ -40,7 +93,7 @@
   <hr style="border-color:lightblue; border-width:10px; display: block;"><!----(H1)分段格線---->
 
   <section>
-    <details open>
+    <details>
       <summary> STMG474 / PMSM / BLDC </summary>
       <table border="1" cellpadding="1" cellspacing="1" style="width: 95%">
         <thead>
